@@ -1,6 +1,3 @@
-<a rel="home">
-  <img src="img/avatar.jpg" alt="Ahmadreza Pourghodrat">
-</a>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -15,13 +12,13 @@
   <!-- CSS Files
   ========================================================= -->
   <!-- Google web fonts - Open Sans -->
-  <link href='//fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
+  <link href="css/fontsgoogleapis.css" rel="stylesheet">
   <!-- /Google web fonts -->
   <!-- Bootstrap CSS -->
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <!-- /Bootstrap CSS -->
   <!-- Font Awesome -->
-  <link rel="stylesheet" href="vendor/font-awesome/css/font-awesome.min.css">
+  <!-- <link rel="stylesheet" href="vendor/font-awesome/css/font-awesome.min.css"> -->
   <!-- /Font Awesome -->
   <!-- Nivo Lightbox -->
   <link href="vendor/nivo-lightbox/nivo-lightbox.css" rel="stylesheet">
@@ -46,8 +43,8 @@
 
   <!-- Favicon and Touch Icons
   ========================================================= -->
-  <link rel="shortcut icon" href="favicon-vertica.ico" type="image/x-icon">
-  <link rel="icon" href="favicon-vertica.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
   <link href="apple-touch-icon-144.png" rel="apple-touch-icon-precomposed" sizes="144x144">
   <link href="apple-touch-icon-114-precomposed.png" rel="apple-touch-icon-precomposed" sizes="114x114">
   <link href="apple-touch-icon-72-precomposed.png" rel="apple-touch-icon-precomposed" sizes="72x72">
@@ -58,6 +55,23 @@
 
 <body data-spy="scroll" data-target="#side-menu">
 
+<!-- Page Loader
+========================================================= -->
+<div class="loader" id="page-loader">
+  <div class="loading-wrapper">
+    <div class="tp-loader spinner"></div>
+    <!-- Edit With Your Name -->
+    <div class="side-menu-name">
+      MH <strong>Yoosefian</strong>
+    </div>
+    <!-- /Edit With Your Name -->
+    <!-- Edit With Your Job -->
+    <p class="side-menu-job">Mechanical Engineer</p>
+    <!-- /Edit With Your Job -->
+  </div>
+</div>
+<!-- /End of Page loader
+========================================================= -->
 
 <!-- SIDE MENU
 ========================================================= -->
@@ -1416,7 +1430,7 @@ and disturbances." In 2018 6th RSI International Conference on Robotics and Mech
 <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
 <!-- /bootstrap -->
 <!-- easing -->
-<script src="//cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+<script src="vendor/easing.js"></script>
 <!-- /easing -->
 <!-- jQuery Mousewheel -->
 <script src="vendor/jquery.mousewheel.min.js"></script>
@@ -1441,23 +1455,14 @@ and disturbances." In 2018 6th RSI International Conference on Robotics and Mech
 <script src="vendor/placeholders.jquery.min.js"></script>
 <!-- /placeholder support -->
 <!-- Cross-browser -->
-<script src="js/cross-browser.js"></script>
+<!-- <script src="js/cross-browser.js"></script> -->
 <!-- /Cross-browser -->
 <!-- Configurations -->
 <script src="js/main.js"></script>
 
     <script src="https://smtpjs.com/v3/smtp.js"></script>
 <!-- /Configurations -->
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-53632119-1', 'auto');
-  ga('send', 'pageview');
-
-</script>
+<script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" data-auto-a11y="true"></script>
 <script>
     function sendMail() {
     window.open('mailto:m.h.yoosefian@gmail.com' + '?subject=' + $('#subject').val() + '&body=' + $('#message').val());

@@ -1,12 +1,12 @@
-//Strict Mode 
+//Strict Mode
 (function($) {
   "use strict";
 
 //Run on Document Ready
 //$('.form-send').onClick().addClass('error');
-$(document).ready(function(){  
+$(document).ready(function(){
 
-//Add home class 
+//Add home class
 var aaa = document.querySelector('.timeline:first-child').id;
 $(".introclass").attr("id",aaa);
 
@@ -15,8 +15,9 @@ $(".timeline-bg")[0]
   $("html").niceScroll({styler:"fb",cursorcolor:"#000"});
 
   //Side menu - Open
-  $('.side-menu-open').mouseenter(function(){
+  $('.side-menu-button').click(function(){
     $('.side-menu').animate({'left': '0px'}, 600, 'easeOutCubic');
+    $('.side-menu-button').addClass("hidden");
   });
 
   //Side menu - Close
@@ -24,7 +25,7 @@ $(".timeline-bg")[0]
     var sideWidth = $('.side-menu').outerWidth();
     var sideWidthClose = '-' + sideWidth + 'px';
     $('.side-menu').animate({'left': sideWidthClose}, 600, 'easeOutCubic');
-    preventDefault();
+    $('.side-menu-button').removeClass("hidden");    
   });
 
   //Smooth Scroll on anchor links
@@ -44,7 +45,7 @@ $(".timeline-bg")[0]
   //Bootstrap Scroll Spy
   $('[data-spy="scroll"]').each(function () {
     var $spy = $(this).scrollspy('refresh');
-  });  
+  });
 
   //Bxslider -see options at http://bxslider.com/
   $('.portfolio-itens').bxSlider({
@@ -65,14 +66,14 @@ $(".timeline-bg")[0]
       nextText: '<i class="fa fa-chevron-right"></i>'
   });
 
-  
+
   //Nivo Lightbox
   $('a.nivobox').nivoLightbox({ effect: 'fade' });
 
   //Portfolio Animations
   $('.portfolio-item').hover(function(){
     $(this).find('.hover-bg-wrapper').fadeIn(200);
-    $(this).find('.hover').show();  
+    $(this).find('.hover').show();
     $(this).find('p').addClass('animated').addClass('fadeInUp');
   }, function(){
     $(this).find('.hover-bg-wrapper').fadeOut(200);
@@ -103,8 +104,8 @@ $(".timeline-bg")[0]
               .blur()
               .closest(".control-group")
               .removeClass("success")
-              .removeClass("error");              
-            
+              .removeClass("error");
+
           } else {
             $("#contactError").fadeIn(300);
             $("#contactSuccess").addClass("hidden");
@@ -118,13 +119,13 @@ $(".timeline-bg")[0]
   //Modal for Contact Form
   $('.modal-wrap').click(function(){
     $('.modal-wrap').fadeOut(300);
-  });      
+  });
 
   //Background Height fix for vertical progress
   $( ".full-height" ).each(function() {
     var $stretch = $(this);
     $stretch.css({ height: $stretch.closest('.line').find('.content-wrap').height() });
-  }); 
+  });
 
 });
 
@@ -142,20 +143,20 @@ $(window).load(function(){
   $('#content-body').addClass('fadeInUp');
 
   //Background Height fix for vertical progress
-  setTimeout(function () {    
+  setTimeout(function () {
       $( ".full-height" ).each(function() {
         var $stretch = $(this);
         $stretch.css({ height: $stretch.closest('.line').find('.content-wrap').outerHeight() });
-      });  
+      });
     }, 300
   );
-  
+
   //Background Height fix for vertical progress on window resize
-  $(window).resize(function(){ 
+  $(window).resize(function(){
      $( ".full-height" ).each(function() {
       var $stretch = $(this);
       $stretch.css({ height: $stretch.closest('.line').find('.content-wrap').outerHeight() });
-    }); 
+    });
   });
 });
 })(jQuery);
