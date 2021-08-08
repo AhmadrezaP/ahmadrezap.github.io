@@ -4,7 +4,7 @@
 Project:	Vertica - Retina Ready Resume / CV & Portfolio
 Author:	Diego Pereira @ DotRex
 Version:	1.1
-Last change:	08/08/14 
+Last change:	08/08/14
 Primary use:	CV / Resume
 -------------------------------------------------------------------*/
 
@@ -30,8 +30,8 @@ Primary use:	CV / Resume
 -------------------------------------------------------------------*/
 
 /* ==========================================================
-! 1. General 
-========================================================== */	
+! 1. General
+========================================================== */
 @import "variables.less";
 
 body {
@@ -100,7 +100,7 @@ h3 {
 .btn-default {
 	background: @color2;
 	color: @bgcolor;
-	border: @color2;	
+	border: @color2;
 	&:hover {
 		background: @color2 - #222!important;
 		color: @bgcolor;
@@ -149,7 +149,7 @@ h3 {
 
 /* ==========================================================
 ! 2. Tipography
-========================================================== */	
+========================================================== */
 
 p {
 	color: @textcolor;
@@ -177,7 +177,7 @@ p {
 	margin-top: 15px;
 	text-align: center;
 	@media @tablet {
-		text-align: left;		
+		text-align: left;
 		font-size: 40px;
 	}
 	@media @laptop {
@@ -204,7 +204,7 @@ p {
 	font-weight: bold;
 	font-size: 40px;
 	line-height: 40px;
-	padding-bottom: 20px;	
+	padding-bottom: 20px;
 	@media @laptop {
 		margin-left: -15px;
 	}
@@ -225,7 +225,7 @@ p {
 
 /* ==========================================================
 ! 3. Page loader
-========================================================== */	
+========================================================== */
 #page-loader {
 	width: 100%;
 	height: 100%;
@@ -247,12 +247,12 @@ p {
 }
 
 
-.tp-loader 	{	  
-	z-index:10000; 
+.tp-loader 	{
+	z-index:10000;
 	position:relative;
 }
 
-			
+
 .tp-loader.spinner {
   width: 30px;
   height: 30px;
@@ -260,7 +260,7 @@ p {
   margin-bottom: 10px;
   background-color: #fff;
   box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.15);
-  -webkit-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.15);  
+  -webkit-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.15);
   -webkit-animation: tp-rotateplane 1.2s infinite ease-in-out;
   animation: tp-rotateplane 1.2s infinite ease-in-out;
   border-radius: 3px;
@@ -276,18 +276,18 @@ p {
 }
 
 @keyframes tp-rotateplane {
-  0% { 
+  0% {
     transform: perspective(120px) rotateX(0deg) rotateY(0deg);
-    -webkit-transform: perspective(120px) rotateX(0deg) rotateY(0deg) 
-  } 50% { 
+    -webkit-transform: perspective(120px) rotateX(0deg) rotateY(0deg)
+  } 50% {
     transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg);
-    -webkit-transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg) 
+    -webkit-transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg)
   }
 }
 
 /* ==========================================================
 ! 4. Header-colors
-========================================================== */	
+========================================================== */
 .top-colors {
  padding: 0 !important;
 }
@@ -313,7 +313,7 @@ p {
 
 /* ==========================================================
 ! 5. Side Menu
-========================================================== */	
+========================================================== */
 .side-menu-open {
 	position: fixed;
 	left: 0;
@@ -322,8 +322,8 @@ p {
 	z-index:777;
 }
 
-.side-menu-button {	
-	font-weight: bold;	
+.side-menu-button {
+	font-weight: bold;
 	display: block;
 	top: 80px;
 	margin-top: 40px;
@@ -414,7 +414,7 @@ p {
 	padding-top: 8px;
 	padding-bottom: 8px;
 	font-weight: 200;
-	
+
 }
 
 .side-menu-job {
@@ -465,16 +465,16 @@ p {
 
 /* ==========================================================
 ! 6. Content
-========================================================== */	
+========================================================== */
 #content-body {
-	margin-top: 10px;	
-	margin-bottom: 10px;	
+	margin-top: 10px;
+	margin-bottom: 10px;
 	position: relative;
 	@media @laptop {
-		margin-top: 45px;	
+		margin-top: 45px;
 		margin-bottom: 90px;
 	}
-	@media @desktop {	
+	@media @desktop {
 		margin-bottom: 200px;
 	}
 }
@@ -492,13 +492,13 @@ p {
 
 /* ==========================================================
 ! 7. Profile intro
-========================================================== */	
+========================================================== */
 .profile-intro {
 	margin-top: 50px;
 	position: relative;
 	z-index: 99;
 	@media @laptop {
-		height: 245px;
+		height: 260px;
 	}
 }
 
@@ -520,12 +520,12 @@ p {
 		.anima(0.3s);
 		&:hover {
 		}
-	}	
+	}
 }
 
 /* ==========================================================
 ! 8. Vertical Timeline
-========================================================== */	
+========================================================== */
 .timeline-wrap	{
 	background: @color1;
 	position: relative;
@@ -581,7 +581,7 @@ p {
 .timeline-margin {
 
 }
-.timeline-margin .content-wrap {	
+.timeline-margin .content-wrap {
 	height: 40px;
 	@media @laptop {
 		height: 80px;
@@ -592,8 +592,8 @@ p {
 	.content-wrap {
 		@media @laptop {
 			height: 260px;
-		}		
-	}	
+		}
+	}
 }
 
 .line-content {
@@ -612,8 +612,8 @@ p {
 
 /* ==========================================================
 ! 9. Section: Education and Work Experience
-========================================================== */	
-.line-content-education {	
+========================================================== */
+.line-content-education {
 	padding-bottom: 10px;
 	@media @laptop {
 		min-height: 150px;
@@ -634,7 +634,7 @@ p {
 }
 
 .graduation-description, .job-description {
-	font-size: 13px;	
+	font-size: 13px;
 	p {
 		font-size: 13px;
 		line-height: 19px;
@@ -643,7 +643,7 @@ p {
 
 /* ==========================================================
 ! 10. Section: Skills
-========================================================== */	
+========================================================== */
 .progress {
     position: relative;
 	height: 25px;
@@ -703,7 +703,7 @@ p {
 		}
 		.hover {
 		}
-		img {			
+		img {
 			-webkit-transform: scale(1.2) rotate(-5deg);
 		    -o-transform: scale(1.2) rotate(-5deg);
 		    transform: scale(1.2) rotate(-5deg);
@@ -729,8 +729,8 @@ p {
 		z-index: 3;
 		display: none;
 	}
-	.hover-bg {		
-		background: @color1 - #222;		
+	.hover-bg {
+		background: @color1 - #222;
 		opacity: 0.9;
 		width: 100%;
 		height: 100%;
@@ -746,11 +746,11 @@ p {
 		color: #fff;
 		opacity: 1;
 		p {
-			color: #fff;			
+			color: #fff;
 			text-align: center;
 		}
 		p.zoomi {
-			font-size: 56px;			
+			font-size: 56px;
 		}
 		p.portfolio-item-title {
 			font-size: 12px;
@@ -848,7 +848,7 @@ textarea.form-control {
 	line-height: 40px;
 	.anima(0.3s);
 	&:hover {
-		
+
 	}
 }
 
@@ -857,18 +857,18 @@ textarea.form-control {
    font-style: italic;
 }
 
-:-moz-placeholder { 
+:-moz-placeholder {
    color: @bgcolor  !important;
 	font-style: italic;
 }
 
-::-moz-placeholder { 
-   color: @bgcolor !important; 
+::-moz-placeholder {
+   color: @bgcolor !important;
    font-style: italic;
 }
 
-:-ms-input-placeholder {  
-   color: @bgcolor  !important; 
+:-ms-input-placeholder {
+   color: @bgcolor  !important;
    font-style: italic;
 }
 
@@ -933,8 +933,8 @@ textarea.form-control {
 		color: @color2;
 		font-size: 22px;
 		border-bottom: 1px solid #ccc;
-		margin-bottom: 5px;	
-		font-weight: bold;	
+		margin-bottom: 5px;
+		font-weight: bold;
 	}
 	p {
 		font-size: 14px;
@@ -963,7 +963,7 @@ textarea.form-control {
 	font-style: italic;
 	position: relative;
 	top: -5px;
-	text-align: center;	
+	text-align: center;
 	@media @laptop {
 		text-align: left;
 	}
