@@ -25,7 +25,7 @@ $(".timeline-bg")[0]
     var sideWidth = $('.side-menu').outerWidth();
     var sideWidthClose = '-' + sideWidth + 'px';
     $('.side-menu').animate({'left': sideWidthClose}, 600, 'easeOutCubic');
-    $('.side-menu-button').removeClass("hidden");    
+    $('.side-menu-button').removeClass("hidden");
   });
 
   //Smooth Scroll on anchor links
@@ -86,7 +86,6 @@ $(".timeline-bg")[0]
     submitHandler: function(form) {
       $.ajax({
         type: "POST",
-        url: "php/contact-form.php",
         data: {
           "name": $("#contactForm #name").val(),
           "email": $("#contactForm #email").val(),
